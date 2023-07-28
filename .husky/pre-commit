@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# 校验分支
+. "$(dirname -- "$0")/custom/branch-check.sh"
+
+# 校验文件注释
+. "$(dirname -- "$0")/custom/desc-check.sh"
+
+# 校验代码
+npx lint-staged

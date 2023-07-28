@@ -1,0 +1,67 @@
+{
+  "name": "daxue-ui-selectschool-report",
+  "version": "0.0.0",
+  "description": "vite4.4 + react 18 + ts5 template： pnpm、husky、eslint、stylelint、 commitizen、lint-staged、staged、prettier",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "prepare": "husky install",
+    "commit": "git-cz && npm run changelog",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "lint": "yarn lint:eslint && yarn lint:stylelint",
+    "lint:eslint": "eslint -c .eslintrc.cjs --ext .ts,.tsx,.js src --fix --report-unused-disable-directives --max-warnings 0",
+    "lint:stylelint": "stylelint src/**/*.{html,css,scss} --fix --max-warnings 0"
+  },
+  "dependencies": {
+    "antd": "^5.7.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.14.2"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^17.6.7",
+    "@types/react": "^18.2.16",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.2.0",
+    "@typescript-eslint/parser": "^6.2.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "commitizen": "^4.3.0",
+    "commitlint": "^17.6.7",
+    "conventional-changelog-cli": "^3.0.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.45.0",
+    "eslint-config-mature": "^0.3.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
+    "postcss-scss": "^4.0.6",
+    "prettier": "^3.0.0",
+    "stylelint": "~15.10.2",
+    "stylelint-config-recess-order": "^4.3.0",
+    "stylelint-scss": "^5.0.1",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.7"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "lint-staged": {
+    "src/**/*.{js,cjs,mjs,ts,tsx}": [
+      "eslint --report-unused-disable-directives --max-warnings 0"
+    ],
+    "src/**/*.{less,css,scss}": [
+      "stylelint --max-warnings 0"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}
