@@ -1,5 +1,5 @@
 {
-  "name": "daxue-ui-selectschool-report",
+  "name": "vite-react-fulllint-template",
   "version": "0.0.0",
   "description": "vite4.4 + react 18 + ts5 template： pnpm、husky、eslint、stylelint、 commitizen、lint-staged、staged、prettier",
   "type": "module",
@@ -40,8 +40,10 @@
     "eslint-plugin-react-refresh": "^0.4.3",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.3",
+    "postcss": "^8.4.27",
     "postcss-scss": "^4.0.6",
     "prettier": "^3.0.0",
+    "sass": "^1.64.1",
     "stylelint": "~15.10.2",
     "stylelint-config-recess-order": "^4.3.0",
     "stylelint-scss": "^5.0.1",

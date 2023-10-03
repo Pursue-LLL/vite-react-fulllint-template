@@ -1,6 +1,6 @@
-# React + TypeScript + Vite
+# vite-react-fulllint-template
 
-如果觉得不错，请麻烦点个Star，非常感谢！
+React18 + TypeScript5 + Vite4.4 项目模板
 
 在官方模板的基础上，增加 pnpm、husky、eslint、stylelint、commitizen、lint-staged、prettier 和路由功能。
 
